@@ -4,7 +4,7 @@
 **Programa:** Ingenieria de Sistemas  
 **Asignatura:** Sistemas Distribuidos  
 **Arquitectura objetivo:** Monolito modular  
-**Estado actual:** API inicial de negocio con medicamentos y proveedores
+**Estado actual:** API inicial con persistencia JPA para medicamentos y proveedores
 
 MediStock es un sistema de gestion de inventario de medicamentos orientado a controlar existencias, lotes, fechas de vencimiento, entradas, salidas, proveedores, alertas y reportes.
 
@@ -121,6 +121,9 @@ docs/
         +-- session-01.md
     +-- session-02/
         +-- session-02.md
++-- week-05/
+    +-- session-01/
+        +-- session-01.md
 MediStock/
 +-- pom.xml
 +-- src/
@@ -138,6 +141,7 @@ MediStock/
 | Semana 3 | Sesion 2 | Diseno de modulos, datos y contratos | Completado |
 | Semana 4 | Sesion 1 | Construccion del servicio y esqueleto funcional | Completado |
 | Semana 4 | Sesion 2 | Primeros endpoints de negocio para medicamentos y proveedores | Completado |
+| Semana 5 | Sesion 1 | Persistencia real con base de datos para medicamentos y proveedores | Completado |
 
 ## Documentos principales
 
@@ -150,6 +154,7 @@ MediStock/
 - [Semana 3 - Sesion 2](docs/week-03/session-02/session-02.md)
 - [Semana 4 - Sesion 1](docs/week-04/session-01/session-01.md)
 - [Semana 4 - Sesion 2](docs/week-04/session-02/session-02.md)
+- [Semana 5 - Sesion 1](docs/week-05/session-01/session-01.md)
 - [Contrato inicial de API](docs/api/api-contract.md)
 - [ADR-001 - Monolito modular](docs/adr/ADR-001-monolito-modular.md)
 
@@ -173,14 +178,14 @@ MediStock/
 | Arquitectura objetivo | Monolito modular |
 | ADR de arquitectura | Definido en ADR-001 |
 | Tecnologia del servidor de aplicacion | Java con Spring Boot |
-| Implementacion del servidor de aplicacion | API inicial implementada en Semana 4 - Sesion 2 |
+| Implementacion del servidor de aplicacion | API inicial con persistencia JPA |
 | Endpoint de salud | Implementado |
-| API de medicamentos | Implementada con persistencia en memoria |
-| API de proveedores | Implementada con persistencia en memoria |
-| Base de datos | Pendiente |
-| Pruebas automatizadas | Pruebas de salud, medicamentos y proveedores definidas |
+| API de medicamentos | Implementada con persistencia JPA |
+| API de proveedores | Implementada con persistencia JPA |
+| Base de datos | Configurada para PostgreSQL |
+| Pruebas automatizadas | Pruebas de salud, medicamentos, proveedores y persistencia |
 | Docker | Pendiente |
-| Primera version funcional | API inicial de negocio |
+| Primera version funcional | API inicial de negocio con persistencia |
 
 ## Forma de trabajo
 

@@ -8,11 +8,13 @@ import java.util.concurrent.ConcurrentMap;
 import java.util.concurrent.atomic.AtomicLong;
 
 import org.springframework.stereotype.Repository;
+import org.springframework.context.annotation.Profile;
 
 import com.MediStock.MediStock.catalog.application.port.MedicationRepositoryPort;
 import com.MediStock.MediStock.catalog.domain.model.Medication;
 
 @Repository
+@Profile("memory")
 public class InMemoryMedicationRepository implements MedicationRepositoryPort {
 
 	private final ConcurrentMap<Long, Medication> medications = new ConcurrentHashMap<>();
