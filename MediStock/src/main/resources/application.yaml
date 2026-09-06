@@ -1,6 +1,18 @@
 spring:
   application:
     name: MediStock
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/medistock}
+    username: ${DB_USERNAME:medistock}
+    password: ${DB_PASSWORD:medistock}
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
+    properties:
+      hibernate:
+        format_sql: true
 
 management:
   endpoints:
