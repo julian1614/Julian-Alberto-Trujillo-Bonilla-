@@ -4,7 +4,7 @@
 **Programa:** Ingenieria de Sistemas  
 **Asignatura:** Sistemas Distribuidos  
 **Arquitectura objetivo:** Monolito modular  
-**Estado actual:** base documental del proyecto
+**Estado actual:** esqueleto funcional inicial del servidor de aplicacion
 
 MediStock es un sistema de gestion de inventario de medicamentos orientado a controlar existencias, lotes, fechas de vencimiento, entradas, salidas, proveedores, alertas y reportes.
 
@@ -114,6 +114,12 @@ docs/
     |   +-- session-01.md
     +-- session-02/
         +-- session-02.md
++-- week-04/
+    +-- session-01/
+        +-- session-01.md
+MediStock/
++-- pom.xml
++-- src/
 ```
 
 ## Avance por sesiones
@@ -126,6 +132,7 @@ docs/
 | Semana 2 | Sesion 2 | Contextos delimitados y decision arquitectonica | Completado |
 | Semana 3 | Sesion 1 | Diseno de dominio y arquitectura hexagonal | Completado |
 | Semana 3 | Sesion 2 | Diseno de modulos, datos y contratos | Completado |
+| Semana 4 | Sesion 1 | Construccion del servicio y esqueleto funcional | Completado |
 
 ## Documentos principales
 
@@ -136,6 +143,7 @@ docs/
 - [Semana 2 - Sesion 2](docs/week-02/session-02/session-02.md)
 - [Semana 3 - Sesion 1](docs/week-03/session-01/session-01.md)
 - [Semana 3 - Sesion 2](docs/week-03/session-02/session-02.md)
+- [Semana 4 - Sesion 1](docs/week-04/session-01/session-01.md)
 - [ADR-001 - Monolito modular](docs/adr/ADR-001-monolito-modular.md)
 
 ## Estado actual del proyecto
@@ -157,11 +165,12 @@ docs/
 | Diseno de modulos, datos y contratos | Definido en Semana 3 - Sesion 2 |
 | Arquitectura objetivo | Monolito modular |
 | ADR de arquitectura | Definido en ADR-001 |
-| Implementacion del servidor de aplicacion | Pendiente |
+| Tecnologia del servidor de aplicacion | Java con Spring Boot |
+| Implementacion del servidor de aplicacion | Iniciada en Semana 4 - Sesion 1 |
 | Base de datos | Pendiente |
-| Pruebas automatizadas | Pendiente |
+| Pruebas automatizadas | Prueba inicial de salud definida |
 | Docker | Pendiente |
-| Primera version funcional | Pendiente |
+| Primera version funcional | Esqueleto funcional inicial |
 
 ## Forma de trabajo
 
