@@ -98,12 +98,14 @@ Decisiones iniciales:
 ```text
 docs/
 +-- week-01/
+|   +-- session-01/
+|   |   +-- session-01.md
+|   +-- session-02/
+|       +-- session-02.md
++-- week-02/
     +-- session-01/
-    |   +-- session-01.md
-    |   +-- qa-session-01.md
-    +-- session-02/
-        +-- session-02.md
-        +-- qa-session-02.md
+        +-- session-01.md
+        +-- qa-session-01.md
 ```
 
 ## Avance por sesiones
@@ -112,15 +114,16 @@ docs/
 | --- | --- | --- | --- |
 | Semana 1 | Sesion 1 | Fundamentos de sistemas distribuidos aplicados a MediStock | Completado |
 | Semana 1 | Sesion 2 | Fundamentos de ingenieria aplicados a MediStock | Completado |
-| Semana 1 | QA Sesion 2 | Validacion documental del entregable | Completado |
+| Semana 2 | Sesion 1 | Estudio de alternativas arquitectonicas | Completado |
+| Semana 2 | QA Sesion 1 | Validacion documental del estudio arquitectonico | Completado |
 
 ## Documentos principales
 
 - [Especificacion inicial del sistema](Sistema%20de%20Gesti%C3%B3n%20de%20Inventario%20de%20Medicamentos.md)
 - [Semana 1 - Sesion 1](docs/week-01/session-01/session-01.md)
-- [QA - Semana 1 - Sesion 1](docs/week-01/session-01/qa-session-01.md)
 - [Semana 1 - Sesion 2](docs/week-01/session-02/session-02.md)
-- [QA - Semana 1 - Sesion 2](docs/week-01/session-02/qa-session-02.md)
+- [Semana 2 - Sesion 1](docs/week-02/session-01/session-01.md)
+- [QA - Semana 2 - Sesion 1](docs/week-02/session-01/qa-session-01.md)
 
 ## Estado actual del proyecto
 
@@ -134,6 +137,7 @@ docs/
 | Estrategia inicial de pruebas | Definida en Semana 1 - Sesion 2 |
 | Flujo Git del proyecto | Definido en Semana 1 - Sesion 2 |
 | Uso de ADR | Definido en Semana 1 - Sesion 2 |
+| Estudio de alternativas arquitectonicas | Definido en Semana 2 - Sesion 1 |
 | Arquitectura objetivo | Monolito modular |
 | ADR de arquitectura | Pendiente |
 | Implementacion del servidor de aplicacion | Pendiente |
