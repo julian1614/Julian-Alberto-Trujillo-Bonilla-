@@ -234,6 +234,13 @@ Errores:
 
 ## Persistencia
 
-En esta fase los datos se almacenan en memoria. Al reiniciar la aplicacion, la informacion creada se pierde.
+Desde la Semana 5 - Sesion 1, medicamentos y proveedores se almacenan mediante JPA sobre PostgreSQL.
 
-La persistencia real con base de datos se agregara en una fase posterior.
+Tablas esperadas:
+
+```text
+medications
+suppliers
+```
+
+Durante pruebas automatizadas se usa H2 en memoria para validar la integracion JPA sin depender de una base de datos externa.
