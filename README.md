@@ -4,7 +4,7 @@
 **Programa:** Ingenieria de Sistemas  
 **Asignatura:** Sistemas Distribuidos  
 **Arquitectura objetivo:** Monolito modular  
-**Estado actual:** API inicial con persistencia JPA para medicamentos y proveedores
+**Estado actual:** API inicial con backend y base de datos dockerizados
 
 MediStock es un sistema de gestion de inventario de medicamentos orientado a controlar existencias, lotes, fechas de vencimiento, entradas, salidas, proveedores, alertas y reportes.
 
@@ -124,7 +124,11 @@ docs/
 +-- week-05/
     +-- session-01/
         +-- session-01.md
+    +-- session-02/
+        +-- session-02.md
 MediStock/
++-- Dockerfile
++-- compose.yaml
 +-- pom.xml
 +-- src/
 ```
@@ -142,6 +146,7 @@ MediStock/
 | Semana 4 | Sesion 1 | Construccion del servicio y esqueleto funcional | Completado |
 | Semana 4 | Sesion 2 | Primeros endpoints de negocio para medicamentos y proveedores | Completado |
 | Semana 5 | Sesion 1 | Persistencia real con base de datos para medicamentos y proveedores | Completado |
+| Semana 5 | Sesion 2 | Dockerizacion del backend y base de datos | Completado |
 
 ## Documentos principales
 
@@ -155,6 +160,7 @@ MediStock/
 - [Semana 4 - Sesion 1](docs/week-04/session-01/session-01.md)
 - [Semana 4 - Sesion 2](docs/week-04/session-02/session-02.md)
 - [Semana 5 - Sesion 1](docs/week-05/session-01/session-01.md)
+- [Semana 5 - Sesion 2](docs/week-05/session-02/session-02.md)
 - [Contrato inicial de API](docs/api/api-contract.md)
 - [ADR-001 - Monolito modular](docs/adr/ADR-001-monolito-modular.md)
 
@@ -184,8 +190,31 @@ MediStock/
 | API de proveedores | Implementada con persistencia JPA |
 | Base de datos | Configurada para PostgreSQL |
 | Pruebas automatizadas | Pruebas de salud, medicamentos, proveedores y persistencia |
-| Docker | Pendiente |
-| Primera version funcional | API inicial de negocio con persistencia |
+| Docker | Backend y PostgreSQL configurados con Docker Compose |
+| Primera version funcional | API inicial de negocio con persistencia y contenedores |
+
+## Ejecucion con Docker
+
+Desde la carpeta `MediStock`:
+
+```powershell
+docker compose up --build
+```
+
+Servicios expuestos:
+
+| Servicio | URL o puerto |
+| --- | --- |
+| Backend | `http://localhost:8080` |
+| PostgreSQL | `localhost:5433` |
+
+Credenciales de base de datos:
+
+```text
+Database: medistock
+Username: medistock
+Password: medistock
+```
 
 ## Forma de trabajo
 

@@ -1,0 +1,35 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: medistock-postgres
+    environment:
+      POSTGRES_DB: medistock
+      POSTGRES_USER: medistock
+      POSTGRES_PASSWORD: medistock
+    ports:
+      - "5433:5432"
+    volumes:
+      - medistock-postgres-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U medistock -d medistock"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: medistock-backend
+    environment:
+      DB_URL: jdbc:postgresql://postgres:5432/medistock
+      DB_USERNAME: medistock
+      DB_PASSWORD: medistock
+    ports:
+      - "8080:8080"
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+volumes:
+  medistock-postgres-data:
