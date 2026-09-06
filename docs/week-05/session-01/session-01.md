@@ -66,7 +66,7 @@ La aplicacion queda configurada para usar PostgreSQL mediante variables de entor
 ```yaml
 spring:
   datasource:
-    url: ${DB_URL:jdbc:postgresql://localhost:5432/medistock}
+    url: ${DB_URL:jdbc:postgresql://localhost:5433/medistock}
     username: ${DB_USERNAME:medistock}
     password: ${DB_PASSWORD:medistock}
     driver-class-name: org.postgresql.Driver
@@ -76,7 +76,7 @@ Valores por defecto:
 
 | Variable | Valor por defecto |
 | --- | --- |
-| `DB_URL` | `jdbc:postgresql://localhost:5432/medistock` |
+| `DB_URL` | `jdbc:postgresql://localhost:5433/medistock` |
 | `DB_USERNAME` | `medistock` |
 | `DB_PASSWORD` | `medistock` |
 
@@ -178,6 +178,7 @@ Para probar manualmente con PostgreSQL local se debe tener una base de datos dis
 Database: medistock
 Username: medistock
 Password: medistock
+Port: 5433
 ```
 
 Luego ejecutar:

@@ -2,7 +2,7 @@ spring:
   application:
     name: MediStock
   datasource:
-    url: ${DB_URL:jdbc:postgresql://localhost:5432/medistock}
+    url: ${DB_URL:jdbc:postgresql://localhost:5433/medistock}
     username: ${DB_USERNAME:medistock}
     password: ${DB_PASSWORD:medistock}
     driver-class-name: org.postgresql.Driver
