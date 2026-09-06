@@ -111,8 +111,10 @@ docs/
 |       +-- session-02.md
 +-- week-03/
     +-- session-01/
-        +-- session-01.md
-        +-- qa-session-01.md
+    |   +-- session-01.md
+    +-- session-02/
+        +-- session-02.md
+        +-- qa-session-02.md
 ```
 
 ## Avance por sesiones
@@ -124,7 +126,8 @@ docs/
 | Semana 2 | Sesion 1 | Estudio de alternativas arquitectonicas | Completado |
 | Semana 2 | Sesion 2 | Contextos delimitados y decision arquitectonica | Completado |
 | Semana 3 | Sesion 1 | Diseno de dominio y arquitectura hexagonal | Completado |
-| Semana 3 | QA Sesion 1 | Validacion documental del diseno de dominio | Completado |
+| Semana 3 | Sesion 2 | Diseno de modulos, datos y contratos | Completado |
+| Semana 3 | QA Sesion 2 | Validacion documental del diseno de modulos, datos y contratos | Completado |
 
 ## Documentos principales
 
@@ -134,7 +137,8 @@ docs/
 - [Semana 2 - Sesion 1](docs/week-02/session-01/session-01.md)
 - [Semana 2 - Sesion 2](docs/week-02/session-02/session-02.md)
 - [Semana 3 - Sesion 1](docs/week-03/session-01/session-01.md)
-- [QA - Semana 3 - Sesion 1](docs/week-03/session-01/qa-session-01.md)
+- [Semana 3 - Sesion 2](docs/week-03/session-02/session-02.md)
+- [QA - Semana 3 - Sesion 2](docs/week-03/session-02/qa-session-02.md)
 - [ADR-001 - Monolito modular](docs/adr/ADR-001-monolito-modular.md)
 
 ## Estado actual del proyecto
@@ -153,6 +157,7 @@ docs/
 | Contextos delimitados iniciales | Definidos en Semana 2 - Sesion 2 |
 | Diseno de dominio inicial | Definido en Semana 3 - Sesion 1 |
 | Arquitectura hexagonal conceptual | Definida en Semana 3 - Sesion 1 |
+| Diseno de modulos, datos y contratos | Definido en Semana 3 - Sesion 2 |
 | Arquitectura objetivo | Monolito modular |
 | ADR de arquitectura | Definido en ADR-001 |
 | Implementacion del servidor de aplicacion | Pendiente |
