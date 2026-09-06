@@ -4,7 +4,7 @@
 **Programa:** Ingenieria de Sistemas  
 **Asignatura:** Sistemas Distribuidos  
 **Arquitectura objetivo:** Monolito modular  
-**Estado actual:** esqueleto funcional inicial del servidor de aplicacion
+**Estado actual:** API inicial de negocio con medicamentos y proveedores
 
 MediStock es un sistema de gestion de inventario de medicamentos orientado a controlar existencias, lotes, fechas de vencimiento, entradas, salidas, proveedores, alertas y reportes.
 
@@ -99,6 +99,8 @@ Decisiones iniciales:
 docs/
 +-- adr/
 |   +-- ADR-001-monolito-modular.md
++-- api/
+|   +-- api-contract.md
 +-- week-01/
 |   +-- session-01/
 |   |   +-- session-01.md
@@ -117,6 +119,8 @@ docs/
 +-- week-04/
     +-- session-01/
         +-- session-01.md
+    +-- session-02/
+        +-- session-02.md
 MediStock/
 +-- pom.xml
 +-- src/
@@ -133,6 +137,7 @@ MediStock/
 | Semana 3 | Sesion 1 | Diseno de dominio y arquitectura hexagonal | Completado |
 | Semana 3 | Sesion 2 | Diseno de modulos, datos y contratos | Completado |
 | Semana 4 | Sesion 1 | Construccion del servicio y esqueleto funcional | Completado |
+| Semana 4 | Sesion 2 | Primeros endpoints de negocio para medicamentos y proveedores | Completado |
 
 ## Documentos principales
 
@@ -144,6 +149,8 @@ MediStock/
 - [Semana 3 - Sesion 1](docs/week-03/session-01/session-01.md)
 - [Semana 3 - Sesion 2](docs/week-03/session-02/session-02.md)
 - [Semana 4 - Sesion 1](docs/week-04/session-01/session-01.md)
+- [Semana 4 - Sesion 2](docs/week-04/session-02/session-02.md)
+- [Contrato inicial de API](docs/api/api-contract.md)
 - [ADR-001 - Monolito modular](docs/adr/ADR-001-monolito-modular.md)
 
 ## Estado actual del proyecto
@@ -166,11 +173,14 @@ MediStock/
 | Arquitectura objetivo | Monolito modular |
 | ADR de arquitectura | Definido en ADR-001 |
 | Tecnologia del servidor de aplicacion | Java con Spring Boot |
-| Implementacion del servidor de aplicacion | Iniciada en Semana 4 - Sesion 1 |
+| Implementacion del servidor de aplicacion | API inicial implementada en Semana 4 - Sesion 2 |
+| Endpoint de salud | Implementado |
+| API de medicamentos | Implementada con persistencia en memoria |
+| API de proveedores | Implementada con persistencia en memoria |
 | Base de datos | Pendiente |
-| Pruebas automatizadas | Prueba inicial de salud definida |
+| Pruebas automatizadas | Pruebas de salud, medicamentos y proveedores definidas |
 | Docker | Pendiente |
-| Primera version funcional | Esqueleto funcional inicial |
+| Primera version funcional | API inicial de negocio |
 
 ## Forma de trabajo
 
