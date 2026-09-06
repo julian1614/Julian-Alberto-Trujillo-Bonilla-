@@ -105,10 +105,13 @@ docs/
 |   +-- session-02/
 |       +-- session-02.md
 +-- week-02/
+|   +-- session-01/
+|   |   +-- session-01.md
+|   +-- session-02/
+|       +-- session-02.md
++-- week-03/
     +-- session-01/
-    |   +-- session-01.md
-    +-- session-02/
-        +-- session-02.md
+        +-- session-01.md
 ```
 
 ## Avance por sesiones
@@ -119,6 +122,7 @@ docs/
 | Semana 1 | Sesion 2 | Fundamentos de ingenieria aplicados a MediStock | Completado |
 | Semana 2 | Sesion 1 | Estudio de alternativas arquitectonicas | Completado |
 | Semana 2 | Sesion 2 | Contextos delimitados y decision arquitectonica | Completado |
+| Semana 3 | Sesion 1 | Diseno de dominio y arquitectura hexagonal | Completado |
 
 ## Documentos principales
 
@@ -127,6 +131,7 @@ docs/
 - [Semana 1 - Sesion 2](docs/week-01/session-02/session-02.md)
 - [Semana 2 - Sesion 1](docs/week-02/session-01/session-01.md)
 - [Semana 2 - Sesion 2](docs/week-02/session-02/session-02.md)
+- [Semana 3 - Sesion 1](docs/week-03/session-01/session-01.md)
 - [ADR-001 - Monolito modular](docs/adr/ADR-001-monolito-modular.md)
 
 ## Estado actual del proyecto
@@ -143,6 +148,8 @@ docs/
 | Uso de ADR | Definido en Semana 1 - Sesion 2 |
 | Estudio de alternativas arquitectonicas | Definido en Semana 2 - Sesion 1 |
 | Contextos delimitados iniciales | Definidos en Semana 2 - Sesion 2 |
+| Diseno de dominio inicial | Definido en Semana 3 - Sesion 1 |
+| Arquitectura hexagonal conceptual | Definida en Semana 3 - Sesion 1 |
 | Arquitectura objetivo | Monolito modular |
 | ADR de arquitectura | Definido en ADR-001 |
 | Implementacion del servidor de aplicacion | Pendiente |
