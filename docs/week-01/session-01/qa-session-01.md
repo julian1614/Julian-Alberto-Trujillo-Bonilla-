@@ -19,7 +19,7 @@ Esta revision no valida codigo fuente porque la sesion corresponde a fundamentos
 La validacion se enfoca en los siguientes archivos:
 
 - `README.md`
-- `docs/week-01/session-01.md`
+- `docs/week-01/session-01/session-01.md`
 - `Sistema de Gestion de Inventario de Medicamentos.md`
 
 El objetivo es confirmar que exista coherencia entre la problematica del sistema, los conceptos de sistemas distribuidos y las decisiones iniciales registradas para MediStock.
@@ -84,6 +84,6 @@ La rama puede continuar hacia revision o integracion, teniendo en cuenta que est
 Archivos revisados:
 
 - `README.md`
-- `docs/week-01/session-01.md`
-- `docs/week-01/qa-session-01.md`
+- `docs/week-01/session-01/session-01.md`
+- `docs/week-01/session-01/qa-session-01.md`
 
