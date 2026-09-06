@@ -6,6 +6,12 @@
 http://localhost:8080
 ```
 
+Cuando se usa Docker Compose, el backend mantiene la misma URL publica:
+
+```text
+http://localhost:8080
+```
+
 ## Salud
 
 ### Verificar estado del backend
@@ -244,3 +250,13 @@ suppliers
 ```
 
 Durante pruebas automatizadas se usa H2 en memoria para validar la integracion JPA sin depender de una base de datos externa.
+
+Para ejecucion manual con Docker Compose, PostgreSQL queda disponible para pgAdmin en:
+
+```text
+Host: localhost
+Port: 5433
+Database: medistock
+Username: medistock
+Password: medistock
+```
