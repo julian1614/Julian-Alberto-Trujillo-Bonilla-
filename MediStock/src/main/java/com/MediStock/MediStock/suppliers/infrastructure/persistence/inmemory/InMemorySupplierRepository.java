@@ -7,12 +7,14 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
 import java.util.concurrent.atomic.AtomicLong;
 
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Repository;
 
 import com.MediStock.MediStock.suppliers.application.port.SupplierRepositoryPort;
 import com.MediStock.MediStock.suppliers.domain.model.Supplier;
 
 @Repository
+@Profile("memory")
 public class InMemorySupplierRepository implements SupplierRepositoryPort {
 
 	private final ConcurrentMap<Long, Supplier> suppliers = new ConcurrentHashMap<>();
