@@ -97,6 +97,8 @@ Decisiones iniciales:
 
 ```text
 docs/
++-- adr/
+|   +-- ADR-001-monolito-modular.md
 +-- week-01/
 |   +-- session-01/
 |   |   +-- session-01.md
@@ -104,7 +106,9 @@ docs/
 |       +-- session-02.md
 +-- week-02/
     +-- session-01/
-        +-- session-01.md
+    |   +-- session-01.md
+    +-- session-02/
+        +-- session-02.md
 ```
 
 ## Avance por sesiones
@@ -114,6 +118,7 @@ docs/
 | Semana 1 | Sesion 1 | Fundamentos de sistemas distribuidos aplicados a MediStock | Completado |
 | Semana 1 | Sesion 2 | Fundamentos de ingenieria aplicados a MediStock | Completado |
 | Semana 2 | Sesion 1 | Estudio de alternativas arquitectonicas | Completado |
+| Semana 2 | Sesion 2 | Contextos delimitados y decision arquitectonica | Completado |
 
 ## Documentos principales
 
@@ -121,6 +126,8 @@ docs/
 - [Semana 1 - Sesion 1](docs/week-01/session-01/session-01.md)
 - [Semana 1 - Sesion 2](docs/week-01/session-02/session-02.md)
 - [Semana 2 - Sesion 1](docs/week-02/session-01/session-01.md)
+- [Semana 2 - Sesion 2](docs/week-02/session-02/session-02.md)
+- [ADR-001 - Monolito modular](docs/adr/ADR-001-monolito-modular.md)
 
 ## Estado actual del proyecto
 
@@ -135,8 +142,9 @@ docs/
 | Flujo Git del proyecto | Definido en Semana 1 - Sesion 2 |
 | Uso de ADR | Definido en Semana 1 - Sesion 2 |
 | Estudio de alternativas arquitectonicas | Definido en Semana 2 - Sesion 1 |
+| Contextos delimitados iniciales | Definidos en Semana 2 - Sesion 2 |
 | Arquitectura objetivo | Monolito modular |
-| ADR de arquitectura | Pendiente |
+| ADR de arquitectura | Definido en ADR-001 |
 | Implementacion del servidor de aplicacion | Pendiente |
 | Base de datos | Pendiente |
 | Pruebas automatizadas | Pendiente |
