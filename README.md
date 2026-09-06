@@ -167,6 +167,10 @@ MediStock/
 - [Contrato inicial de API](docs/api/api-contract.md)
 - [ADR-001 - Monolito modular](docs/adr/ADR-001-monolito-modular.md)
 
+## Mesa de trabajo
+
+[Jira](https://corhuila-team-txkrijxq.atlassian.net/jira/software/projects/KAN/boards/1?filter=&groupBy=none)
+
 ## Estado actual del proyecto
 
 | Elemento | Estado |
@@ -219,6 +223,7 @@ Username: medistock
 Password: medistock
 ```
 
+
 ## Forma de trabajo
 
 El repositorio se trabajara por ramas desde `Develop`. Cada sesion generara evidencia documental o tecnica segun corresponda.
@@ -236,3 +241,11 @@ rama de trabajo por sesion
 ```
 
 Los commits se escribiran en ingles. Los archivos Markdown del proyecto se mantendran en espanol.
+
+
+------- 
+<!--
+CONFIG
+FULL NAME: Julian Alberto Trujillo Bonilla 
+GITHUB_USER: julian1614
+-->
