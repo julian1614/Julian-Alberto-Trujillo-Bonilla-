@@ -101,6 +101,8 @@ docs/
 |   +-- ADR-001-monolito-modular.md
 +-- api/
 |   +-- api-contract.md
++-- setup/
+|   +-- guia-ejecucion-proyecto.md
 +-- week-01/
 |   +-- session-01/
 |   |   +-- session-01.md
@@ -161,6 +163,7 @@ MediStock/
 - [Semana 4 - Sesion 2](docs/week-04/session-02/session-02.md)
 - [Semana 5 - Sesion 1](docs/week-05/session-01/session-01.md)
 - [Semana 5 - Sesion 2](docs/week-05/session-02/session-02.md)
+- [Guia de ejecucion del proyecto](docs/setup/guia-ejecucion-proyecto.md)
 - [Contrato inicial de API](docs/api/api-contract.md)
 - [ADR-001 - Monolito modular](docs/adr/ADR-001-monolito-modular.md)
 
