@@ -244,8 +244,7 @@ Los commits se escribiran en ingles. Los archivos Markdown del proyecto se mante
 
 
 ------- 
-<!--
-CONFIG
-FULL NAME: Julian Alberto Trujillo Bonilla 
+<!-- CONFIG
+FULL_NAME: Julian Alberto Trujillo Bonilla
 GITHUB_USER: julian1614
 -->
